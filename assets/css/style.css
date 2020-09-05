@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Srisakdi:wght@700&display=swap");
+
+body {
+  box-sizing: border-box;
+}
+
+.footer {
+  height: 80px;
+}
+.logo {
+  content:url(../images/logo.png);
+}
+
+.banner {
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1110px;
+  height: 200px;
+}
+
+nav {
+  text-align: right;
+}
+
+.nav-text {
+  color: lightskyblue !important;
+  font-weight: 900;
+  font-size: 25px;
+  text-shadow: 2px 2px 2px #111;
+  font-family: "Alata", sans-serif;
+}
+.current_page {
+  text-decoration: underline lightskyblue;
+}
+
+.nav-text:hover {
+  font-size: 30px;
+  transition: 0.8s;
+}
+
+div {
+  font-family: "Alata", sans-serif;
+}

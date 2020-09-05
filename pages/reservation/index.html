@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+  <title>Rezerwacja</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/reset.css">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="../../assets/js/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container container-fluid-sm my-3 g-light text-dark" id="container">
+      <div class="row-sm" id="menu">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a href="../index.html" class="logo">
+          </a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+              <a href="../index.html" class="nav-item nav-link nav-text">O nas</a>
+              <a href="../menu/index.html" class="nav-item nav-link nav-text">Menu</a>
+              <a href="../reservation/index.html" class="nav-item nav-link nav-text current_page">Rezerwacja</a>
+              <a href="../contact/index.html" class="nav-item nav-link nav-text">Kontakt</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="container">
+      <div class="container banner"></div>
+    </section>
+
+    <div class="container">
+      <h1 class="text-center mt-5 mb-5">Rezerwacja</h1>
+      <div class="row mb-5 table-primary align-items-center justify-content-center"
+        style="height: 50px; border-radius: 10px;">
+        <h6 class="mt-2 ml-2 mr-2">Rezerwowany termin zostanie potwierdzony poprzez wiadomość mailową
+          w ciągu 24 godzin.</h6>
+      </div>
+      <form name="reservation_form">
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="firstname">Imię:<span style="color: red; font-size: 12px;">*</span></label>
+            <input type="text" class="form-control" name="firstname" id="firstname" placeholder="wpisz imię"
+              onchange="checkFirstName();" required>
+            <div>
+              &nbsp;
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="lastname">Nazwisko:<span style="color: red; font-size: 12px;">*</span></label>
+            <input type="text" class="form-control" id="lastname" placeholder="wpisz nazwisko"
+              onchange="checkLastName();" required>
+            <div>
+              &nbsp;
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+          </div>
+        </div>
+        <div class="form-row">
+
+          <div class="col-md-4 mb-3">
+            <label for="phone">Telefon:<span style="color: red; font-size: 12px;">*</span></label>
+            <input type="tel" class="form-control" id="phone" placeholder="numer telefonu"
+              aria-describedby="inputGroupPrepend3" onchange="checkPhone();" required>
+            <div id="phone_feedback">
+              &nbsp;
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="email">Email:<span style="color: red; font-size: 12px;">*</span></label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="email"
+              aria-describedby="inputGroupPrepend3" onchange="checkEmail();" required>
+            <div id="email_feedback">
+              &nbsp;
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="date">Dzień:<span style="color: red; font-size: 12px;">*</span></label>
+            <input type="date" class="form-control" id="date" onchange="checkDate();" required>
+            <div id="date_feedback">
+              &nbsp;
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="time">Godzina:<span style="color: red; font-size: 12px;">*</span></label>
+            <input type="time" class="form-control" id="time" placeholder="między 12 a 22" onchange="checkTime();"
+              required>
+            <div id="time_feedback">
+              &nbsp;
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="quantity">Ilość osób:<span style="color: red; font-size: 12px;">*</span></label>
+            <input type="number" class="form-control" name="quantity" id="quantity" placeholder="maksymalnie 10 osób"
+              onchange="checkQuantity();" required>
+            <div id="quantity_feedback">
+              &nbsp;
+            </div>
+          </div>
+        </div>
+        <div class="mb-5">
+          <button class="btn btn-primary float-right" type="submit">Rezerwuj</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div class="container container-fluid-sm my-3 g-light text-dark bg-dark footer">
+      <div class=" text-light text-center pt-3">
+        Projekt by Paweł Zięba
+      </div>
+      <div class="text-center"><a href='https://www.freepik.com/photos/background'
+          style="color: grey; text-decoration: none; font-size: 10px;">Background photo created by valeria_aksakova
+          -
+          www.freepik.com</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
