@@ -5,14 +5,11 @@
   <title>Rezerwacja</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Pawel Zieba">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/reset.css">
   <link rel="stylesheet" href="../../assets/css/style.css">
-
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -34,18 +31,17 @@
               <a href="../index.html" class="nav-item nav-link nav-text">O nas</a>
               <a href="../menu/index.html" class="nav-item nav-link nav-text">Menu</a>
               <a href="../reservation/index.html" class="nav-item nav-link nav-text current_page">Rezerwacja</a>
+              <a href="../blog/index.html" class="nav-item nav-link nav-text">Blog</a>
               <a href="../contact/index.html" class="nav-item nav-link nav-text">Kontakt</a>
             </div>
           </div>
         </nav>
       </div>
+      <div class="container mt-3 banner"></div>
     </div>
   </header>
-  <main>
-    <section class="container">
-      <div class="container banner"></div>
-    </section>
 
+  <main>
     <div class="container">
       <h1 class="text-center mt-5 mb-5">Rezerwacja</h1>
       <div class="row mb-5 table-primary align-items-center justify-content-center"
@@ -75,7 +71,6 @@
           </div>
         </div>
         <div class="form-row">
-
           <div class="col-md-4 mb-3">
             <label for="phone">Telefon:<span style="color: red; font-size: 12px;">*</span></label>
             <input type="tel" class="form-control" id="phone" placeholder="numer telefonu"
@@ -119,12 +114,13 @@
           </div>
         </div>
         <div class="mb-5">
-          <button class="btn btn-primary float-right" type="submit">Rezerwuj</button>
+          <button class="btn back float-right" type="submit">Rezerwuj</button>
         </div>
       </form>
     </div>
   </main>
-  <footer>
+
+  <footer class="container">
     <div class="container container-fluid-sm my-3 g-light text-dark bg-dark footer">
       <div class=" text-light text-center pt-3">
         Projekt by Paweł Zięba
