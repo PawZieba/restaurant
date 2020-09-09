@@ -8,7 +8,7 @@ body {
   height: 80px;
 }
 .logo {
-  content:url(../images/logo.png);
+  content: url(../images/logo.png);
 }
 
 .banner {
@@ -42,4 +42,98 @@ nav {
 
 div {
   font-family: "Alata", sans-serif;
+}
+
+.note {
+  font-size: 8px;
+}
+.wrapper {
+  display: inline-block;
+  max-width: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.wrapper:hover {
+  cursor: pointer;
+}
+
+.wrapper img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.wrapper .overlay_top {
+  position: absolute;
+  /* margin: auto; */
+  left: 8px;
+  right: 8px;
+  color: lightskyblue;
+  background-color: rgb(0, 0, 0, 0.7);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 18px;
+}
+
+.wrapper .overlay_bottom {
+  position: absolute;
+  bottom: 8px;
+  /* margin: auto; */
+  left: 8px;
+  right: 8px;
+  color: lightskyblue;
+  background-color: rgb(0, 0, 0, 0.7);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 991px) {
+  .wrapper .overlay_top {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    color: lightskyblue;
+    background-color: rgb(0, 0, 0, 0.7);
+    font-size: 14px;
+  }
+
+  .wrapper .overlay_bottom {
+    color: lightskyblue;
+    background-color: rgb(0, 0, 0, 0.7);
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper .overlay_top {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    color: lightskyblue;
+    background-color: rgb(0, 0, 0, 0.7);
+    font-size: 12px;
+  }
+
+  .wrapper .overlay_bottom {
+    color: lightskyblue;
+    background-color: rgb(0, 0, 0, 0.7);
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+}
+
+.back {
+  background-color: lightskyblue !important;
 }
